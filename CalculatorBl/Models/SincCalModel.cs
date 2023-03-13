@@ -8,5 +8,6 @@ namespace CalculatorBl.Models
 {
     public class SincCalModel
     {
+        public float fSincNumber { get; set; }
     }
 }

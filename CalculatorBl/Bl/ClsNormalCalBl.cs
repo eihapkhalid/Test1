@@ -38,6 +38,7 @@ namespace CalculatorBl.Bl
             Console.WriteLine($"result of sum = {table.fNumber1 + table.fNumber2}\n\n");
 
         }
+
         #endregion
 
         #region Div Function
@@ -98,6 +99,8 @@ namespace CalculatorBl.Bl
 
             Console.WriteLine($"result of Mul = {table.fNumber1 * table.fNumber2} \n\n");
         }
+
+
         #endregion
 
         #region Sub Function
@@ -127,6 +130,23 @@ namespace CalculatorBl.Bl
             }
 
             Console.WriteLine($"result of Sub = {table.fNumber1 - table.fNumber2} \n\n");
+        }
+
+
+        #endregion
+
+        #region Ignower Functons
+        public void tan(NormalCalModel table)
+        {
+            throw new NotImplementedException();
+        }
+        public void Sin(NormalCalModel table)
+        {
+            throw new NotImplementedException();
+        }
+        public void Cos(NormalCalModel table)
+        {
+            throw new NotImplementedException();
         } 
         #endregion
     }

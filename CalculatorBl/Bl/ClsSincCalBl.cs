@@ -9,5 +9,6 @@ namespace CalculatorBl.Bl
 {
     public class ClsSincCalBl
     {
+
     }
 }

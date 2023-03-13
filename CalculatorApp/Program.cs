@@ -27,6 +27,8 @@ namespace CalculatorApp
                         UiHelper.NormalCalOptions();
                         break;
                     case "2":
+                        Console.Clear();
+                        UiHelper.SinCalOptions();
                         break;
                     case "3":
                         break;

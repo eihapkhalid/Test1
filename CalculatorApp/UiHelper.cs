@@ -21,6 +21,7 @@ namespace CalculatorApp
             Console.WriteLine("press 3 to proff cal  :\n");
         }
 
+        #region NormalCalOptions
         public static void NormalCalOptions()
         {
             string sVarSwitch = string.Empty;
@@ -31,10 +32,10 @@ namespace CalculatorApp
                 Console.WriteLine("press 2 to sub number  :\n");
                 Console.WriteLine("press 3 to mul number  :\n");
                 Console.WriteLine("press 4 to div number  :\n");
-                
+
                 sVarSwitch = Console.ReadLine();
                 ClsNormalCalBl oClsNormalCalBl = new ClsNormalCalBl();
-                
+
                 switch (sVarSwitch)
                 {
                     case "b":
@@ -65,5 +66,48 @@ namespace CalculatorApp
 
             }
         }
+        #endregion
+
+        #region SinCalOptions
+        public static void SinCalOptions()
+        {
+            string sVarSwitch = string.Empty;
+            while (sVarSwitch != "b")
+            {
+                Console.WriteLine("press b to back  :\n");
+                Console.WriteLine("press 1 to sin number  :\n");
+                Console.WriteLine("press 2 to cos number  :\n");
+                Console.WriteLine("press 3 to tan number  :\n");
+
+                sVarSwitch = Console.ReadLine();
+                ClsSincCalBl oClsSincCalBl = new ClsSincCalBl();
+
+                switch (sVarSwitch)
+                {
+                    case "b":
+                        Console.Clear();
+                        sVarSwitch = "b";
+                        break;
+                    case "1":
+                        Console.Clear();
+                        SincCalModel oSinSincCalModel = new SincCalModel();
+                        oClsSincCalBl.Sin(oSinSincCalModel);
+                        break;
+                    case "2":
+                        Console.Clear();
+                        SincCalModel oSinCosCalModel = new SincCalModel();
+                        oClsSincCalBl.Cos(oSinCosCalModel);
+                        break;
+                    case "3":
+                        Console.Clear();
+                        SincCalModel oSinTanCalModel = new SincCalModel();
+                        oClsSincCalBl.tan(oSinTanCalModel);
+                        break;
+
+                }
+
+            }
+        } 
+        #endregion
     }
 }

@@ -35,7 +35,7 @@ namespace CalculatorBl.Bl
                 Console.WriteLine("plz enter valid Number");
             }
 
-            Console.WriteLine($"result of sum = {table.fNumber1 + table.fNumber2}\n\n");
+            Console.WriteLine($"result of sum = {table.fNumber1 + table.fNumber2}\n\n **************************");
 
         }
 
@@ -67,7 +67,7 @@ namespace CalculatorBl.Bl
                 Console.WriteLine("plz enter valid Number");
             }
 
-            Console.WriteLine($"result of Div = {table.fNumber1 / table.fNumber2}\n\n");
+            Console.WriteLine($"result of Div = {table.fNumber1 / table.fNumber2}\n\n **************************");
         }
         #endregion
 
@@ -97,7 +97,7 @@ namespace CalculatorBl.Bl
                 Console.WriteLine("plz enter valid Number");
             }
 
-            Console.WriteLine($"result of Mul = {table.fNumber1 * table.fNumber2} \n\n");
+            Console.WriteLine($"result of Mul = {table.fNumber1 * table.fNumber2} \n\n **************************");
         }
 
 
@@ -129,7 +129,7 @@ namespace CalculatorBl.Bl
                 Console.WriteLine("plz enter valid Number");
             }
 
-            Console.WriteLine($"result of Sub = {table.fNumber1 - table.fNumber2} \n\n");
+            Console.WriteLine($"result of Sub = {table.fNumber1 - table.fNumber2} \n\n **************************");
         }
 
 
@@ -138,15 +138,12 @@ namespace CalculatorBl.Bl
         #region Ignower Functons
         public void tan(NormalCalModel table)
         {
-            throw new NotImplementedException();
         }
         public void Sin(NormalCalModel table)
         {
-            throw new NotImplementedException();
         }
         public void Cos(NormalCalModel table)
         {
-            throw new NotImplementedException();
         } 
         #endregion
     }
